@@ -4,3 +4,745 @@
   box-sizing: border-box
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
+@font-face 
+  font-family: 'Myriad Pro', sans-serif
+  font-weight: 300  
+  src: url(../web/MyriadProRegular/MyriadProRegular.woff)
+@mixin roboto-light
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+@mixin roboto-thin
+  font-family: 'Roboto', sans-serif
+  font-weight: 100
+@mixin playfair-black
+    font-family: 'Playfair Display', serif
+    font-weight: 900
+@mixin playfair-bold
+    font-family: 'Playfair Display', serif
+    font-weight: 700
+@mixin playfair-regular
+    font-family: 'Playfair Display', serif
+    font-weight: 400
+@mixin roboto-regular
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+@mixin roboto-bold
+  font-family: 'Roboto', sans-serif
+  font-weight: 700
+@mixin roboto-black
+  font-family: 'Roboto', sans-serif
+  font-weight: 900
+@mixin myriad-light
+  font-family: 'Myriad Pro', sans-serif
+  font-weight: 300
+@mixin myriad-regular
+  font-family: 'Myriad Pro', sans-serif
+  font-weight: 400
+@mixin hammer
+  font-family: 'Hammersmith One', sans-serif
+  
+
+
+/* topper styling */
+  
+.section__topper
+  background-image: url(../img/first-bg.png)
+  background-position: center
+  background-size: cover
+.topper__wrapper
+  max-width: 940px
+  margin: 0 auto
+  .topper__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 20px 
+  .header__logo
+    display: flex
+    align-items: center
+    max-width: 150px  
+.header__logo-text
+    color: #2fa6bd
+    @include myriad-light
+    font-size: 16px 
+    line-height: 24px
+    padding-left: 10px
+    letter-spacing: .4px
+.header__nav-menu
+  max-width: 600px
+  .menu-list
+    list-style-type: none
+    display: flex
+    .menu-item
+      display: flex
+      flex-direction: nowrap
+      margin: 10px
+      max-width: 120px
+      @include roboto-black
+      font-size: 13px
+      color: #ffffff
+      a
+        color: #ffffff
+        text-decoration: none
+        &:link
+          color: #ffffff
+        &:hover
+          color: #00e0d0
+          cursor: pointer
+          transition: 0.6s ease 
+        &:active
+          font-size: 12px
+      span 
+        padding-left: 5px
+.topper__title
+  justify-content: center
+  color: #ffffff
+  .title-topic
+    text-align: center
+    @include playfair-bold
+    font-size: 32px 
+    margin: 180px auto 25px 
+  .line
+    display: block
+    height: 1px
+    width: 50px
+    background: #00e0d0
+    margin: 0 auto
+  [type="submit"]
+    height: 40px
+    width: 120px
+    text-transform: uppercase
+    color: #00e0d0
+    background: transparent 
+    outline: none
+    border: 1px solid #00e0d0
+    font-size: 16px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    margin: 0 auto 125px
+    border-radius: 2px
+    @include hammer
+    &:active
+      transform: scale(0.98)
+    &:hover
+      box-shadow: 1px 1px 5px 3px  #b8b8b1
+.topper__description
+  text-align: center
+  @include roboto-light
+  font-size: 14px 
+  line-height: 24px
+  letter-spacing: 0.5px 
+  margin: 25px auto 50px
+.topper__circules
+    display: flex
+    justify-content: center
+    padding-bottom: 70px
+    .round
+      height: 12px
+      width: 12px
+      border: 1px solid #ffffff
+      border-radius: 50%
+      margin: 2px
+    .active
+      background-color: #00e0d0
+      border: 1px solid #00e0d0
+
+/* start of "our-story" styling */
+
+.our-story
+  &__wrapper
+    max-width: 940px
+    margin: 0 auto
+  &__conteiner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 70px auto 70px
+  &__right
+    max-width: 540px  
+    color: #413d4b
+  &__title
+    @include playfair-bold
+    font-size: 22px
+    letter-spacing: 0.5px 
+  &__description
+    @include roboto-light
+    font-size: 14px
+    line-height: 22px
+    letter-spacing: 0.3px 
+    margin-top: 30px
+  .below
+    margin-bottom: 30px
+  [type="submit"]
+    height: 40px
+    width: 120px
+    text-transform: uppercase
+    color: #00e0d0
+    background: transparent 
+    outline: none
+    border: 1px solid #00e0d0
+    font-size: 16px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    border-radius: 2px
+    @include hammer
+    &:active
+      transform: scale(0.98)
+    &:hover
+      box-shadow: 1px 1px 5px 3px  #b8b8b1
+
+/* "watch-story" start styling */
+.watch-story
+  background-image: url(../img/second-bg.png)
+  background-position: center
+  background-size: cover  
+  &__conteiner
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  &__box
+    cursor: pointer
+    text-align: center
+    align-self: center
+    align-content: center 
+    width: 180px
+    height: 155px
+    margin-bottom: 200px
+    margin-top: 200px
+    &:hover
+      transform: scale(1.025)
+      transition: ease 0.6s
+    &:active
+      transform: scale(0.98)
+      transition: 0.8s
+    img 
+      width: 100px
+      height: 100px       
+  &__title
+    color: #ffffff
+    @include roboto-black
+    font-size: 16px
+    letter-spacing: 0.5px
+    margin-top: 35px  
+
+/* start "expertise" styling */
+.expertise
+  color: #413d4b
+  &__wrapper
+    max-width: 960px
+    margin: 0 auto
+  &__topic
+    text-align: center
+    margin-top: 70px
+  &__title
+    @include playfair-bold
+    font-size: 22px
+    letter-spacing: 0.5px 
+  &__text 
+    margin: 15px
+  .line
+    display: block
+    height: 1px
+    width: 50px
+    background: #c6c4c9
+    margin: 0 auto 45px
+  &__description--box
+    display: flex
+    flex-flow: row wrap 
+    justify-content: center
+    align-items: center
+    margin-bottom: 70px
+    .description__item
+      width: 320px
+      height: 250px 
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      &:active
+        transform: scale(0.98)
+      &:hover
+        box-shadow: 1px 1px 4px 2px  #d6d6cd
+      img 
+        margin: 30px auto
+      .item__title
+        color: #413d4b
+        @include roboto-black
+        font-size: 14px
+        letter-spacing: 0.5px 
+        margin-bottom: 25px
+      .item__text
+        text-align: center
+    .one, .two, .three
+      border-bottom: 1px solid #ebebeb
+    .two, .three, .five, .six
+      border-left: 1px solid #ebebeb
+/* start "our-team" styling */
+.our-team
+  background-image: url(../img/third-bg.png)
+  background-position: center
+  background-size: cover 
+  &__wrapper
+    max-width: 940px
+    margin: 0 auto 
+  &__conteiner
+    color: #ffffff
+  &__topic
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__title
+    @include playfair-bold
+    font-size: 22px
+    letter-spacing: 0.5px 
+    margin: 70px auto 15px
+  .topic__text
+    @include playfair-regular
+    font-size: 14px 
+    letter-spacing: 0.75px  
+  .line
+    display: block
+    height: 1px
+    width: 50px
+    background: #655c80
+    margin: 20px auto 45px
+.our-team__box
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between  
+  align-items: center
+  .person__item
+    text-align: center
+    border: 1px solid rgba(255, 255, 255, .5)
+    &:hover
+      transform: scale(1.015)
+      transition: ease 0.6s
+    &:active
+      transform: scale(0.98)
+      transition: 0.8s
+    .person__name
+      @include roboto-black
+      font-size: 14px
+      letter-spacing: 0.5px 
+      margin: 20px auto 10px
+    .person__profession
+      @include roboto-light
+      font-size: 13px
+      color: #fafafa
+      margin-bottom: 25px
+    img 
+      background-color: #ffffff
+.our-team__bot  
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 70px
+  .bot__text
+    @include roboto-light
+    font-size: 14px
+    letter-spacing: 0.5px 
+    margin-bottom: 25px
+  [type="submit"]
+    height: 40px
+    width: 140px
+    text-transform: uppercase
+    color: #00e0d0
+    background: transparent 
+    outline: none
+    border: 1px solid #00e0d0
+    font-size: 16px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    @include hammer
+    margin-bottom: 70px
+    border-radius: 2px
+    &:active
+      transform: scale(0.98)
+    &:hover
+      box-shadow: 1px 1px 5px 3px  #b8b8b1
+/* start "our-works" styling */
+.our-works
+  &__header
+    display: flex
+    justify-content: space-between
+    max-width: 960px
+    margin: 70px auto
+    color: #413d4b
+  &__title
+    @include playfair-bold
+    font-size: 22px
+    letter-spacing: 0.5px 
+  &__text
+    @include roboto-light
+    font-size: 14px
+    letter-spacing: 0.5px 
+  &__galery 
+    max-width: 1600px 
+    margin: 0 auto
+    display: flex
+    flex-flow: row wrap 
+    justify-content: center
+    .galery__item 
+      width: 266px
+      height: 200px
+      border: 1px solid #413d4b
+      cursor: pointer
+      img 
+        width: 100% 
+        height: 100% 
+      &:hover
+        transform: scale(1.015)
+      &:active
+        transform: scale(0.98)
+        transition: 0.8s
+  &__footer
+    [type="submit"]
+      height: 40px
+      width: 120px
+      text-transform: uppercase
+      color: #00e0d0
+      background: transparent 
+      outline: none
+      border: 1px solid #00e0d0
+      font-size: 16px
+      cursor: pointer
+      display: flex
+      justify-content: center
+      margin: 70px auto
+      border-radius: 2px
+      @include hammer
+      &:active
+        transform: scale(0.98)
+      &:hover
+        box-shadow: 1px 1px 5px 3px  #b8b8b1
+/* start "employee-describe" styling */
+.employee-describe
+  background-image: url(../img/fourth-bg.png)
+  background-position: center
+  background-size: cover 
+  &__wrapper
+    max-width: 780px
+    margin: 0 auto 
+  &__conteiner
+    color: #ffffff  
+  &__text
+    @include playfair-regular
+  &__title
+    font-size: 100px
+    line-height: 25px
+    letter-spacing: 0.3px 
+    padding-top: 69px
+    text-align: center
+  &__subtitle
+    font-size: 16px
+    line-height: 26px 
+    letter-spacing: 0.25px  
+    text-align: center
+    color: #e1dfe6
+    margin: 40px auto 50px
+.employee
+  &__top
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    .person__name
+      margin-bottom: 10px
+      @include roboto-black
+      font-size: 14px
+      line-height: 22px
+      letter-spacing: 0.5px 
+    .person__profession
+      @include roboto-light
+      font-size: 13px
+      line-height: 22px 
+      color: #e1dfe6
+      margin-bottom: 45px
+  &__bot
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding-bottom: 69px
+    img 
+      margin: 7px  
+      cursor: pointer
+      &:active
+        transform: scale(0.98)
+      &:hover
+        border-radius: 50%
+        box-shadow: 1px 1px 4px 2px  #b8b8b1
+    i 
+      font-size: 26px
+      line-height: 22px
+      cursor: pointer
+      &:active
+        transform: scale(0.95)
+      &:hover
+        transform: scale(1.08)
+/* start "form-clients" styling */
+.form-clients
+  &__wrapper
+    max-width: 940px
+    margin: 0 auto
+  &__conteiner
+    display: flex
+    flex-flow: row
+    justify-content: space-between
+    .form__side
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      max-width: 460px  
+      .form-title
+        margin: 70px 0 30px
+        @include playfair-bold
+        font-size: 22px 
+        color: #413d4b
+      form 
+        display: flex
+        flex-direction: column
+        justify-content: flex-start 
+      input 
+        width: 460px
+        padding: 20px
+        margin-bottom: 25px
+        border: 1px solid #e5e5e5
+        &::placeholder
+          @include roboto-light
+          font-size: 14px
+          letter-spacing: 0.5px 
+      textarea
+        padding: 20px
+        margin-bottom: 25px
+        resize: none
+        border: 1px solid #e5e5e5
+        &::placeholder
+          @include roboto-light
+          font-size: 14px
+          letter-spacing: 0.5px 
+      [type="submit"]
+        height: 40px
+        width: 120px
+        text-transform: uppercase
+        color: #00e0d0
+        background: transparent 
+        outline: none
+        border: 1px solid #00e0d0
+        font-size: 16px
+        cursor: pointer
+        display: flex
+        justify-content: center
+        border-radius: 2px
+        margin-bottom: 70px
+        @include hammer
+        &:active
+          transform: scale(0.98)
+        &:hover
+          box-shadow: 1px 1px 5px 3px  #b8b8b1
+    .clients__side
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      max-width: 380px  
+      .form-title
+        margin: 70px 0 30px
+        @include playfair-bold
+        font-size: 22px 
+        color: #413d4b
+      .clients__box
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        .left__side
+          display: flex
+          flex-direction: column  
+          justify-content: center
+          align-items: center 
+          img 
+            margin: 25px 80px 40px 0
+        .right__side
+          display: flex
+          flex-direction: column  
+          justify-content: center
+          align-items: center
+          img 
+            margin: 25px 0 40px 0
+/* start "footer" styling  */
+.footer
+  background-image: url(../img/fifth-bg.png)
+  background-position: center 
+  background-size: cover 
+  &__wrapper
+    max-width: 940px
+    margin: 0 auto 
+  &__top
+    display: flex
+    flex-direction: row 
+    justify-content: space-between
+    padding-top: 70px
+  &__left
+    display: flex
+    flex-direction: column
+    justify-content:  center
+    align-items: flex-start
+    max-width: 300px
+    .left__text
+      color: #ffffff
+      @include roboto-light
+      font-size: 14px
+      line-height: 26px
+      letter-spacing: 0.25px
+      margin: 25px 0 70px 0
+  &__logo
+    display: flex
+    align-items: center
+    .left__title
+      color: #2fa6bd
+      @include roboto-thin
+      font-size: 30px 
+      padding-left: 10px
+  &__center
+    display: flex
+    flex-direction: column
+    justify-content:  flex-start  
+    max-width: 300px
+    color: #ffffff
+    .center__title
+      @include roboto-black
+      font-size: 15px
+      line-height: 26px
+      letter-spacing: 0.5px 
+      margin-top: 15px
+    .adress
+      @include roboto-light
+      font-size: 14px
+      line-height: 26px
+      letter-spacing: 0.25px  
+      margin-top: 25px
+      span
+        padding-left: 26px
+      .pad
+        padding-left: 15px
+    .tell
+      @include roboto-light
+      font-size: 14px
+      line-height: 26px
+      letter-spacing: 0.25px 
+      margin-top: 25px
+      span
+        padding-left: 13px
+  &__right
+    display: flex
+    flex-direction: column
+    justify-content:  flex-start  
+    max-width: 300px
+    color: #ffffff
+    .right__title
+      @include roboto-black
+      font-size: 15px
+      line-height: 26px
+      letter-spacing: 0.5px 
+      margin-top: 15px
+      margin-bottom: 25px
+    form
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+    input 
+      background: transparent
+      border: 1px solid #a19bb5
+      padding: 17px
+      margin-bottom: 25px
+      color: #ffffff
+    &::placeholder
+      @include roboto-light
+      font-size: 14px
+      line-height: 26px
+      letter-spacing: 0.25px 
+    button
+      text-transform: uppercase
+      color: #000000
+      background: rgba(255, 255, 255, 0.5) 
+      outline: none
+      border: none
+      font-size: 16px
+      cursor: pointer 
+      margin-bottom: 25px
+      margin-left: 10px 
+      i
+        padding: 14px 22px  
+        font-size: 24px
+        line-height: 26px
+        letter-spacing: 0.5px 
+    .socials
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        .soc-icons
+          border: 1px solid #ffffff
+          width: 35px
+          height: 35px
+          border-radius: 50%
+          padding: 5px
+          margin: 5px
+          text-align: center
+          cursor: pointer
+          i
+            vertical-align: middle
+          &:active
+            transform: scale(0.95)
+          &:hover
+            color: #2fa6bd
+            border: 1px solid #2fa6bd
+.footer__bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-bottom: 70px
+  .bottom__left
+    max-width: 300px
+    display: flex
+    justify-content: space-between
+    color: #ffffff
+    @include roboto-regular
+    font-size: 14px
+    line-height: 26px
+    letter-spacing: 0.25px  
+    .bot__title
+      margin-right: 15px
+      cursor: pointer
+      &:active
+        transform: scale(0.95)
+      &:hover
+        color: #2fa6bd
+  .bottom__right
+    .bot-text
+      color: #ffffff
+      a
+        text-decoration: none
+        color: #ffffff
+        &:link
+          color: #ffffff
+        &:active
+          transform: scale(0.95)
+        &:hover
+          color: #2fa6bd
+
+      
+
+
+
+      
+
+      
+

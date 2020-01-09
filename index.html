@@ -4,29 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
   <title>Tajam</title>
 </head>
 <body>
-  <section class="section__topper">
+  <section id="home" class="section__topper">
     <div class="topper__wrapper">
       <div class="topper__conteiner">
         <header class="topper__header">
           <div class="header__logo">
             <img src="img/logo.png" alt="tajam logo">
-            <p class="header__logo-text">tajam</p>
+            <p class="header__logo-text"> tajam</p>
           </div>
           <div class="header__nav-menu">
             <ul class="menu-list">
-              <li class="menu-item">HOME</li>
-              <li class="menu-item">ABOUT</li>
-              <li class="menu-item">EXPERTISE</li>
-              <li class="menu-item">TEAMS</li>
-              <li class="menu-item">WORKS</li>
-              <li class="menu-item">PEOPLE SAY</li>
-              <li class="menu-item">CONTACT</li>
+              <li class="menu-item"><a href="#home">HOME</a></li>
+              <li class="menu-item"><a href="#about">ABOUT</a></li>
+              <li class="menu-item"><a href="#expertise">EXPERTISE</a></li>
+              <li class="menu-item"><a href="#teams">TEAMS</a></li>
+              <li class="menu-item"><a href="#works">WORKS</a></li>
+              <li class="menu-item"><a href="#people-say">PEOPLE<span>SAY</span></a></li>
+              <li class="menu-item"><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
         </header>
@@ -34,12 +35,12 @@
           <h2 class="title-topic">We Are Awesome Creative Agency</h2>
           <span class="line"></span>
           <p class="topper__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+              Aenean sollicitudin, lorem <br />quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+              Duis sed odio sit amet nibh <br />vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
           <button type="submit" value="LEARN MORE">LEARN MORE</button>
         </div>
         <div class="topper__circules">
-          <span class="round-active"></span>
+          <span class="round active"></span>
           <span class="round"></span>
           <span class="round"></span>
           <span class="round"></span>
@@ -47,7 +48,7 @@
       </div>
     </div>
   </section>
-  <section class="section__our-story">
+  <section id="about" class="our-story">
     <div class="our-story__wrapper">
       <div class="our-story__conteiner">
         <div class="our-story__left"><img src="img/big-logo.png" alt="Tajam logo"></div>
@@ -56,7 +57,7 @@
           <p class="our-story__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
             Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
             Duis sed odio sit amet nibh vulputate cursus</p>
-          <p class="our-story__description2">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+          <p class="our-story__description below">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
              Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
              per inceptos himenaeos.</p>
           <button type="submit">LEARN MORE</button>
@@ -67,12 +68,14 @@
   <section class="watch-story">
     <div class="watch-story__wrapper">
       <div class="watch-story__conteiner">
-        <img src="img/play1.png" alt="play-logo">
-        <h3 class="watch-story__title">WATCH OUR STORY</h3>
+        <div class="watch-story__box">
+          <img src="img/play1.png" alt="play-logo">
+          <h3 class="watch-story__title">WATCH OUR STORY</h3>
+        </div>
       </div>
     </div>
   </section>
-  <section class="expertise">
+  <section id="expertise" class="expertise">
     <div class="expertise__wrapper">
       <div class="expertise__conteiner">
         <div class="expertise__topic">
@@ -81,41 +84,41 @@
           <span class="line"></span>
         </div>
         <div class="expertise__description--box">
-          <div class="description__item">
+          <div class="description__item one">
             <img src="img/desktop-icon.png" alt="desktop-icon">
             <h4 class="item__title">WEB DESIGN & DEVELOPMENT</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
-          <div class="description__item">
+          <div class="description__item two">
             <img src="img/brush-icon.png" alt="brush-icon">
             <h4 class="item__title">BRANDING IDENTITY</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
-          <div class="description__item">
+          <div class="description__item three">
             <img src="img/mobile-icon.png" alt="mobile-icon">
             <h4 class="item__title">MOBILE APP</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
-          <div class="description__item">
+          <div class="description__item four">
             <img src="img/pie-pice-icon.png" alt="pie-pice-icon">
             <h4 class="item__title">SEARCH ENGINE OPTIMIZATION</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
-          <div class="description__item">
+          <div class="description__item five">
             <img src="img/mobile-app-icon.png" alt="mobile-app-icon">
             <h4 class="item__title">GAME DEVELOPMENT</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
-          <div class="description__item">
+          <div class="description__item six">
             <img src="img/heart-icon.png" alt="heart-icon">
             <h4 class="item__title">MADE WITH LOVE</h4>
-            <p class="item__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            <p class="item__text">This is Photoshop's version  of Lorem <br />Ipsum. Proin gravida nibh vel velit <br />auctor aliquet Aenean.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="our-team">
+  <section id="teams" class="our-team">
     <div class="our-team__wrapper">
       <div class="our-team__conteiner">
         <div class="our-team__topic">
@@ -154,7 +157,7 @@
       </div>
     </div>
   </section>
-  <section class="our-works">
+  <section id="works" class="our-works">
     <div class="our-works__wrapper">
       <div class="our-works__conteiner">
         <div class="our-works__header">
@@ -162,8 +165,7 @@
             <h2 class="our-works__tiile">OUR WORKS</h2>
           </div>
           <div class="our-works__right">
-            <p class="our-works__text">See All Project in dribbble</p>
-            <i class="fas fa-angle-right"></i>
+            <p class="our-works__text">See All Project in dribbble  <i class="fas fa-angle-right"></i> </p>
           </div>
         </div>
         <div class="our-works__galery">
@@ -184,7 +186,7 @@
       </div>
     </div>
   </section>
-  <section class="employee-describe">
+  <section id="people-say" class="employee-describe">
     <div class="employee-describe__wrapper">
       <div class="employee-describe__conteiner">
         <div class="employee-describe__text">
@@ -213,49 +215,53 @@
     <div class="form-clients__wrapper">
       <div class="form-clients__conteiner">
         <div class="form__side">
-          <h3 class="form_title">GIVE US A GOOD NEWS</h3>
+          <h3 class="form-title">GIVE US A GOOD NEWS</h3>
           <form action="#" method="get">
-            <input type="text" name="Name" placeholder="Name">
-            <input type="email" name="Email" placeholder="Email">
+            <input required type="text" name="Name" placeholder="Name">
+            <input required type="email" name="Email" placeholder="Email">
             <input type="text" name="Subject" placeholder="Subject">
             <textarea name="massage" placeholder="Your Massage" cols="30" rows="10"></textarea>
             <button type="submit">SUBMIT</button>
           </form>
         </div>
         <div class="clients__side">
-          <div class="left__clients">
-            <img src="img/Zara_Logo.png" alt="Zara_Logo">
-            <img src="img/Barneys_New_York_Logo.png" alt="Barneys_New_York_Logo">
-            <img src="img/Calvin_klein_logo.png" alt="Calvin_klein_logo">
-            <img src="img/Converse_logo.png" alt="Converse_logo">
-            <img src="img/Levi's_logo.png" alt="Levi's_logo">
-          </div>
-          <div class="right__side">
-            <img src="img/Logo_of_Mango.png" alt="Logo_of_Mango">
-            <img src="img/Gucci_Logo.png" alt="Gucci_Logo">
-            <img src="img/Logo_NIKE.png" alt="Logo_NIKE">
-            <img src="img/Puma_Logo.png" alt="Puma_Logo">
-            <img src="img/Billabong.png" alt="Billabong">
+          <h3 class="form-title">OUR HAPPY CLIENTS</h3>
+          <div class="clients__box">
+            <div class="left__side">
+              <a href="https://www.zara.com/" target="_blank"><img src="img/Zara_Logo.png" alt="Zara_Logo"></a>
+              <a href="https://www.barneys.com/" target="_blank"><img src="img/Barneys_New_York_Logo.png" alt="Barneys_New_York_Logo"></a>
+              <a href="https://www.calvinklein.us/en" target="_blank"><img src="img/Calvin_klein_logo.png" alt="Calvin_klein_logo"></a>
+              <a href="https://www.converse.com/country-language-selector" target="_blank"><img src="img/Converse_logo.png" alt="Converse_logo"></a>
+              <a href="https://www.levi.com/US/en_US/" target="_blank"><img src="img/Levi's_logo.png" alt="Levi's_logo"></a>
+            </div>
+            <div class="right__side">
+              <a href="https://shop.mango.com/" target="_blank"><img src="img/Logo_of_Mango.png" alt="Logo_of_Mango"></a>
+              <a href="https://www.gucci.com/int/en/" target="_blank"><img src="img/Gucci_Logo.png" alt="Gucci_Logo"></a>
+              <a href="https://www.nike.com/" target="_blank"><img src="img/Logo_NIKE.png" alt="Logo_NIKE"></a>
+              <a href="https://us.puma.com/" target="_blank"><img src="img/Puma_Logo.png" alt="Puma_Logo"></a>
+              <a href="https://www.billabong.com/" target="_blank"><img src="img/Billabong.png" alt="Billabong"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="footer">
+  <section id="contact" class="footer">
     <div class="footer__wrapper">
       <div class="footer__conteiner">
         <div class="footer__top">
           <div class="footer__left">
-            <img src="" alt="">
-            <h3 class="left__title">tajam</h3>
-            <p class="left__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+            <div class="footer__logo">
+              <img src="img/logo.png" alt="tajam logo">
+              <h3 class="left__title">tajam</h3>
+            </div>
+            <p class="left__text">lorem quis bibendum auctor, nisi elit <br />consequat ipsum, nec sagittis sem nibh elit. <br />Duis sed odio sit amet auctror a ornare odio <br />non mauris vitae erat in elit</p>
           </div>
           <div class="footer__center">
             <h3 class="center__title">OUR STUDIO</h3>
-            <img src="" alt="">
-            <p class="adress"><i class="fas fa-map-marker-alt"></i>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
-              11480 - Indonesia</p>
-            <p class="tell"><i class="fas fa-phone"></i>(+62) 21-2224 3333</p>
+            <p class="adress"><i class="fas fa-map-marker-alt"></i><span class="pad">Ruko cucruk, Jl. Radio luar dalem jos</span><br /><span>No.12 - 13, Kalideres - Jakarta Barat</span>
+              <br /><span>11480 - Indonesia</span></p>
+            <p class="tell"><i class="fas fa-phone"></i><span>(+62) 21-2224 3333</span></p>
           </div>
           <div class="footer__right">
             <h3 class="right__title">STAY IN TOUCH</h3>
@@ -264,12 +270,12 @@
               <button type="submit"><i class="far fa-paper-plane"></i></button>
             </form>
             <div class="socials">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-dribbble"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-google-plus-g"></i>
-              <i class="fab fa-youtube"></i>
+              <div class="soc-icons"><i class="fab fa-facebook-f"></i></div>
+              <div class="soc-icons"><i class="fab fa-twitter"></i></div>              
+              <div class="soc-icons"><i class="fab fa-dribbble"></i></div>              
+              <div class="soc-icons"><i class="fab fa-instagram"></i></div>              
+              <div class="soc-icons"><i class="fab fa-google-plus-g"></i></div>              
+              <div class="soc-icons"><i class="fab fa-youtube"></i></div>              
             </div>
           </div>
         </div>
@@ -280,7 +286,7 @@
           <h5 class="bot__title">PRIVACY</h5>
         </div>
         <div class="bottom__right">
-          <p class="bot-text">Copyright © 2015 - Tajem Creative</p>
+          <p class="bot-text">Copyright © 2015 - <a href="#home">Tajem Creative</a></p>
         </div>
         </div>
       </div>
