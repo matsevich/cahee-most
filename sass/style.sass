@@ -42,7 +42,6 @@
   font-family: 'Hammersmith One', sans-serif
   
 
-
 /* topper styling */
   
 .section__topper
@@ -52,24 +51,29 @@
 .topper__wrapper
   max-width: 940px
   margin: 0 auto
+  position: relative
   .topper__header
+    position: fixed
     display: flex
     justify-content: space-between
     align-items: center
     padding-top: 20px 
+    width: 940px
   .header__logo
     display: flex
     align-items: center
-    max-width: 150px  
+    max-width: 150px 
+    cursor: pointer
+    &:active
+      transform: scale(0.98)
 .header__logo-text
     color: #2fa6bd
-    @include myriad-light
-    font-size: 16px 
+    @include roboto-thin
+    font-size: 26px 
     line-height: 24px
     padding-left: 10px
     letter-spacing: .4px
 .header__nav-menu
-  max-width: 600px
   .menu-list
     list-style-type: none
     display: flex
@@ -82,6 +86,7 @@
       font-size: 13px
       color: #ffffff
       a
+        text-shadow: 3px 3px 6px #2f284d, -3px -3px 6px #2f284d
         color: #ffffff
         text-decoration: none
         &:link
@@ -101,7 +106,8 @@
     text-align: center
     @include playfair-bold
     font-size: 32px 
-    margin: 180px auto 25px 
+    padding-top: 180px
+    margin-bottom: 25px 
   .line
     display: block
     height: 1px
@@ -144,6 +150,10 @@
       border: 1px solid #ffffff
       border-radius: 50%
       margin: 2px
+      cursor: pointer
+      &:hover
+        border: 1px solid #00e0d0
+        background-color: #00e0d0
     .active
       background-color: #00e0d0
       border: 1px solid #00e0d0
@@ -162,6 +172,10 @@
   &__right
     max-width: 540px  
     color: #413d4b
+  &__left
+    max-width: 235px
+    img
+      width: 100%
   &__title
     @include playfair-bold
     font-size: 22px
@@ -319,12 +333,13 @@
   .person__item
     text-align: center
     border: 1px solid rgba(255, 255, 255, .5)
+    cursor: pointer
     &:hover
       transform: scale(1.015)
-      transition: ease 0.6s
+      transition: ease 0.2s
     &:active
       transform: scale(0.98)
-      transition: 0.8s
+      transition: 0.2s
     .person__name
       @include roboto-black
       font-size: 14px
@@ -382,6 +397,11 @@
     @include roboto-light
     font-size: 14px
     letter-spacing: 0.5px 
+    cursor: pointer
+    &:hover
+      color: #00e0d0
+    &:active
+      transform: scale(0.98)
   &__galery 
     max-width: 1600px 
     margin: 0 auto
@@ -478,12 +498,17 @@
       &:hover
         border-radius: 50%
         box-shadow: 1px 1px 4px 2px  #b8b8b1
+    .face-img
+      &:hover
+        transform: scale(1.45)
+        transition: 0.3s
+        box-shadow: none
     i 
       font-size: 26px
       line-height: 22px
       cursor: pointer
       &:active
-        transform: scale(0.95)
+        font-size: 24px
       &:hover
         transform: scale(1.08)
 /* start "form-clients" styling */
@@ -493,7 +518,7 @@
     margin: 0 auto
   &__conteiner
     display: flex
-    flex-flow: row
+    flex-flow: row wrap
     justify-content: space-between
     .form__side
       display: flex
@@ -585,7 +610,7 @@
     margin: 0 auto 
   &__top
     display: flex
-    flex-direction: row 
+    flex-flow: row wrap  
     justify-content: space-between
     padding-top: 70px
   &__left
@@ -604,10 +629,14 @@
   &__logo
     display: flex
     align-items: center
+    &:active
+      transform: scale(0.98)
+    a
+      text-decoration: none
     .left__title
       color: #2fa6bd
       @include roboto-thin
-      font-size: 30px 
+      font-size: 26px 
       padding-left: 10px
   &__center
     display: flex
@@ -627,6 +656,11 @@
       line-height: 26px
       letter-spacing: 0.25px  
       margin-top: 25px
+      a
+        text-decoration: none
+        color: #ffffff
+        &:hover
+          color: #2fa6bd
       span
         padding-left: 26px
       .pad
@@ -637,6 +671,11 @@
       line-height: 26px
       letter-spacing: 0.25px 
       margin-top: 25px
+      a
+        text-decoration: none
+        color: #ffffff
+        &:hover
+          color: #2fa6bd
       span
         padding-left: 13px
   &__right
@@ -707,6 +746,7 @@
 .footer__bottom
   display: flex
   justify-content: space-between
+  flex-flow: row wrap
   align-items: center
   padding-bottom: 70px
   .bottom__left
@@ -737,7 +777,7 @@
           transform: scale(0.95)
         &:hover
           color: #2fa6bd
-
+@import media.sass
       
 
 

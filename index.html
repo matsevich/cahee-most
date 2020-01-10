@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
   <title>Tajam</title>
@@ -15,11 +16,11 @@
     <div class="topper__wrapper">
       <div class="topper__conteiner">
         <header class="topper__header">
-          <div class="header__logo">
+          <div class="header__logo" onclick="myMenu()">
             <img src="img/logo.png" alt="tajam logo">
             <p class="header__logo-text"> tajam</p>
           </div>
-          <div class="header__nav-menu">
+          <div id="navigate" class="header__nav-menu">
             <ul class="menu-list">
               <li class="menu-item"><a href="#home">HOME</a></li>
               <li class="menu-item"><a href="#about">ABOUT</a></li>
@@ -200,11 +201,11 @@
           </div>
           <div class="employee__bot">
             <i class="fas fa-angle-left"></i>
-            <img src="img/pic1.png" alt="employee1">
-            <img src="img/pic2.png" alt="employee1">
-            <img src="img/pic3.png" alt="employee1">
-            <img src="img/pic4.png" alt="employee1">
-            <img src="img/pic5.png" alt="employee1">
+            <img class="face-img one" src="img/pic1.png" alt="employee1">
+            <img class="face-img" src="img/pic2.png" alt="employee2">
+            <img src="img/pic3.png" alt="employee3">
+            <img class="face-img" src="img/pic4.png" alt="employee4">
+            <img class="face-img five" src="img/pic5.png" alt="employee5">
             <i class="fas fa-angle-right"></i>
           </div>
         </div>
@@ -252,16 +253,16 @@
         <div class="footer__top">
           <div class="footer__left">
             <div class="footer__logo">
-              <img src="img/logo.png" alt="tajam logo">
-              <h3 class="left__title">tajam</h3>
+              <a href="#home"><img src="img/logo.png" alt="tajam logo"></a>
+              <a href="#home"><h3 class="left__title">tajam</h3></a>
             </div>
             <p class="left__text">lorem quis bibendum auctor, nisi elit <br />consequat ipsum, nec sagittis sem nibh elit. <br />Duis sed odio sit amet auctror a ornare odio <br />non mauris vitae erat in elit</p>
           </div>
           <div class="footer__center">
             <h3 class="center__title">OUR STUDIO</h3>
-            <p class="adress"><i class="fas fa-map-marker-alt"></i><span class="pad">Ruko cucruk, Jl. Radio luar dalem jos</span><br /><span>No.12 - 13, Kalideres - Jakarta Barat</span>
+            <p class="adress"><a target="_blank" href="https://www.google.com.ua/maps/search/Ruko+cucruk,+Jl.+Radio+luar+dalem+jos+No.12+-+13,+Kalideres+-+Jakarta+Barat+11480+-+Indonesia/@-6.1235728,106.7135653,18.47z?hl=en"><i class="fas fa-map-marker-alt"></i></a><span class="pad">Ruko cucruk, Jl. Radio luar dalem jos</span><br /><span>No.12 - 13, Kalideres - Jakarta Barat</span>
               <br /><span>11480 - Indonesia</span></p>
-            <p class="tell"><i class="fas fa-phone"></i><span>(+62) 21-2224 3333</span></p>
+            <p class="tell"><a href="tel:+622122243333"><i class="fas fa-phone"></i></a><span>(+62) 21-2224 3333</span></p>
           </div>
           <div class="footer__right">
             <h3 class="right__title">STAY IN TOUCH</h3>
@@ -292,5 +293,6 @@
       </div>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
