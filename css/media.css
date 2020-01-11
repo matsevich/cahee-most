@@ -156,6 +156,7 @@
   .header__logo-text {
     font-weight: 700; }
   .header__nav-menu {
+    display: none;
     background-color: #00e0d163;
     border-radius: 30px;
     transition: 2s; } }
