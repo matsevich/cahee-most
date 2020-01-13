@@ -37,6 +37,12 @@
   .topper__wrapper .menu {
     display: none;
     position: relative; }
+    .topper__wrapper .menu sup {
+      font-size: 12px;
+      padding-left: 15px;
+      vertical-align: middle; }
+      .topper__wrapper .menu sup i {
+        font-size: 10px; }
 
 .header__logo-text {
   color: #2fa6bd;
